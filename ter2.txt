@@ -1,0 +1,76 @@
+theia@theiadocker-knittala:/home/project$ ls
+theia@theiadocker-knittala:/home/project$ ls
+theia@theiadocker-knittala:/home/project$ git clone https://github.com/ibm-developer-skills-network/dealer_evaluation_frontend.git
+Cloning into 'dealer_evaluation_frontend'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 16 (delta 2), reused 1 (delta 1), pack-reused 8 (from 1)
+Receiving objects: 100% (16/16), 8.26 KiB | 8.26 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+theia@theiadocker-knittala:/home/project$ ls
+theia@theiadocker-knittala:/home/project$ git clone https://github.com/ibm-developer-skills-network/dealer_evaluation_frontend.git
+Cloning into 'dealer_evaluation_frontend'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 16 (delta 2), reused 1 (delta 1), pack-reused 8 (from 1)
+Receiving objects: 100% (16/16), 8.26 KiB | 8.26 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+theia@theiadocker-knittala:/home/project$ cd dealer_evaluation_frontend
+theia@theiadocker-knittala:/home/project/dealer_evaluation_frontend$ ibmcloud ce application create --name frontend --image us.icr.io/${SN_ICR_NAMESPACE}/frontend --registry-secret icr-secret --port 5001 --build-source .
+Creating application 'frontend'...
+Waiting for new application revision...
+Packaging files to upload from source path '.'...
+Submitting build run 'frontend-run-250625-031349614'...
+For troubleshooting information visit: https://cloud.ibm.com/docs/codeengine?topic=codeengine-troubleshoot-build.
+Run 'ibmcloud ce buildrun get -n frontend-run-250625-031349614' to check the build run status.
+Run 'ibmcloud ce buildrun logs -f -n frontend-run-250625-031349614' to follow the logs of the build run.
+Creating image 'us.icr.io/sn-labs-knittala/frontend:250625-0713-yqocw'...
+Waiting for build run to complete...
+Build run status: 'pending'
+Build run status: 'running'
+Build run completed successfully.
+Run 'ibmcloud ce buildrun get -n frontend-run-250625-031349614' to check the build run status.
+Waiting for application 'frontend' to become ready.
+Configuration 'frontend' is waiting for a Revision to become ready.
+Ingress has not yet been reconciled.
+Waiting for load balancer to be ready.
+Run 'ibmcloud ce application get -n frontend' to check the application status.
+OK                                                
+
+https://frontend.1x2umtqxdkiy.us-south.codeengine.appdomain.cloud
+theia@theiadocker-knittala:/home/project/dealer_evaluation_frontend$ theia@theiadoc
+theia@theiadocker-knittala:/home/project$ ls
+theia@theiadocker-knittala:/home/project$ git clone https://github.com/ibm-developer-skills-network/dealer_evaluation_frontend.git
+Cloning into 'dealer_evaluation_frontend'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 16 (delta 2), reused 1 (delta 1), pack-reused 8 (from 1)
+Receiving objects: 100% (16/16), 8.26 KiB | 8.26 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+theia@theiadocker-knittala:/home/project$ cd dealer_evaluation_frontend
+theia@theiadocker-knittala:/home/project/dealer_evaluation_frontend$ ibmcloud ce application create --name frontend --image us.icr.io/${SN_ICR_NAMESPACE}/frontend --registry-secret icr-secret --port 5001 --build-source .
+Creating application 'frontend'...
+Waiting for new application revision...
+Packaging files to upload from source path '.'...
+Submitting build run 'frontend-run-250625-031349614'...
+For troubleshooting information visit: https://cloud.ibm.com/docs/codeengine?topic=codeengine-troubleshoot-build.
+Run 'ibmcloud ce buildrun get -n frontend-run-250625-031349614' to check the build run status.
+Run 'ibmcloud ce buildrun logs -f -n frontend-run-250625-031349614' to follow the logs of the build run.
+Creating image 'us.icr.io/sn-labs-knittala/frontend:250625-0713-yqocw'...
+Waiting for build run to complete...
+Build run status: 'pending'
+Build run status: 'running'
+Build run completed successfully.
+Run 'ibmcloud ce buildrun get -n frontend-run-250625-031349614' to check the build run status.
+Waiting for application 'frontend' to become ready.
+Configuration 'frontend' is waiting for a Revision to become ready.
+Ingress has not yet been reconciled.
+Waiting for load balancer to be ready.
+Run 'ibmcloud ce application get -n frontend' to check the application status.
+OK                                                
+
+https://frontend.1x2umtqxdkiy.us-south.codeengine.appdomain.cloud
+theia@theiadocker-knittala:/home/project/dealer_evaluation_frontend$ 

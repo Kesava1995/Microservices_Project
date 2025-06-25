@@ -1,0 +1,27 @@
+ibmcloud ce application create --name prodlist --image us.icr.io/${SN_ICR_NAMESPACE}/prodlist --registry-secret icr-secret --port 5000 --build-context-dir products_list --build-source https://github.com/ibm-developer-skills-network/dealer_evaluation_backend.git
+
+https://prodlist.1x2umtqxdkiy.us-south.codeengine.appdomain.cloud
+
+
+
+
+ibmcloud ce application create --name dealerdetails --image us.icr.io/${SN_ICR_NAMESPACE}/dealerdetails --registry-secret icr-secret --port 8080 --build-context-dir dealer_details --build-source https://github.com/ibm-developer-skills-network/dealer_evaluation_backend.git
+
+https://dealerdetails.1x2umtqxdkiy.us-south.codeengine.appdomain.cloud
+
+
+
+git clone https://github.com/ibm-developer-skills-network/dealer_evaluation_frontend.git
+
+ibmcloud ce application create --name frontend --image us.icr.io/${SN_ICR_NAMESPACE}/frontend --registry-secret icr-secret --port 5001 --build-source .
+
+https://frontend.1x2umtqxdkiy.us-south.codeengine.appdomain.cloud
+
+
+
+
+ibmcloud ce application delete --name prodlist
+
+ibmcloud ce application delete --name dealerdetails
+
+ibmcloud ce application delete --name frontend
